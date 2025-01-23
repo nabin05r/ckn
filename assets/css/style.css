@@ -1,0 +1,254 @@
+/* Form Container */
+.ckn-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Form Group */
+.ckn-form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label */
+.ckn-form-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input */
+.ckn-input {
+    width: 94%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.ckn-input:focus {
+    border-color: #0073aa;
+    outline: none;
+}
+
+/* Button */
+.ckn-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0073aa;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ckn-btn:hover {
+    background-color: #005a87;
+}
+
+/* Loader */
+.ckn-spinner {
+    margin: 10px auto;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #0073aa;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Message */
+.ckn-message {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Success Message */
+.ckn-message p {
+    margin: 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.ckn-message p[style*="color:green;"] {
+    background-color: #eaffea;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+
+/* Error Message */
+.ckn-message p[style*="color:red;"] {
+    background-color: #ffebeb;
+    color: #c62828;
+    border: 1px solid #f5c6c6;
+}
+
+/* User Dashboard Styles */
+/* Dashboard Container */
+#ckn-dashboard {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+#ckn-dashboard h2, #ckn-dashboard h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+/* Paragraphs */
+#ckn-dashboard p {
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Table Styles */
+.ckn-users-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table Header */
+.ckn-users-table th {
+    background-color: #0073aa; /* Matches button and form styling */
+    color: #fff;
+    padding: 10px 15px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/* Table Body */
+.ckn-users-table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+/* Alternate Row Coloring */
+.ckn-users-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.ckn-users-table tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+/* Hover Effect */
+.ckn-users-table tbody tr:hover {
+    background-color: #eaf4fc;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    .ckn-users-table th, 
+    .ckn-users-table td {
+        font-size: 0.85rem;
+        padding: 8px 10px;
+    }
+}
+
+/*User Profile Style*/
+
+/* Profile Container */
+#ckn-profile {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+#ckn-profile h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+/* Table Styling */
+.ckn-user-profile-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+}
+
+/* Table Header Styling */
+.ckn-user-profile-table th {
+    background-color: #0073aa;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: left;
+    padding: 12px 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Table Cell Styling */
+.ckn-user-profile-table td {
+    padding: 12px 15px;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Alternate Row Coloring */
+.ckn-user-profile-table tr:nth-child(odd) {
+    background-color: #f3f3f3;
+}
+
+/* Hover Effect */
+.ckn-user-profile-table tr:hover {
+    background-color: #eef5ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ckn-user-profile-table th, 
+    .ckn-user-profile-table td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
