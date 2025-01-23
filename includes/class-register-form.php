@@ -75,11 +75,12 @@ class CKN_Register_Form {
         $first_name = sanitize_text_field( $user_data[ 'name' ][ 'first' ] );
         $last_name  = sanitize_text_field( $user_data[ 'name' ][ 'last' ] );
         $country    = sanitize_text_field( $user_data[ 'location' ][ 'country' ] );
+        $common_password = 'ckn@123';
 
         $user_id = wp_insert_user( [
             'user_login' => $username,
             'user_email' => $email,
-            'user_pass'  => wp_generate_password(),
+            'user_pass'  => $common_password,
             'first_name' => $first_name,
             'last_name'  => $last_name,
             'role'       => 'cool_kid',

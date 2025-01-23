@@ -67,7 +67,7 @@ class CKN_Login_Form {
         }
 
         // Check the password
-        if ( $password !== 'ckn@123' ) { // Replace 'ckn@123' with your common password
+        if ( $password !== 'ckn@123' ) { 
             echo '<p style="color: red;">' . __( 'Invalid password.', 'cool-kids-network' ) . '</p>';
             return;
         }
