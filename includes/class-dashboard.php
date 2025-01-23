@@ -31,7 +31,7 @@ class CKN_Dashboard {
             <p><?php echo sprintf( __( 'Welcome, %s!', 'cool-kids-network' ), $current_user->display_name ); ?></p>
 
             <?php if ( $user_role === 'cool_kid' ): ?>
-                <p><?php _e( 'You cannot view dashboard with Cool Kid Role,', 'cool-kids-network' ); ?></p>
+                <p><?php _e( 'You cannot view dashboard with Cool Kid Role.', 'cool-kids-network' ); ?></p>
             <?php elseif ( $user_role === 'cooler_kid' ): ?>
                 <!-- Users List (Excluding Email and Role) -->
                 <table class="ckn-users-table">

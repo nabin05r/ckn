@@ -50,8 +50,6 @@ jQuery(window).on('load', function () {
     const $loginButton = jQuery('.login-btn a'); // Target the link inside the login-btn class
 
     if (jQuery('body').hasClass('logged-in')) {
-        // Log to the console for debugging
-        console.log('User is logged in. Updating login button.');
 
         // Update the button text to "Logout"
         $loginButton.text('Logout');
@@ -61,8 +59,6 @@ jQuery(window).on('load', function () {
             'href',
             ckn_ajax.logoutUrl
         );
-    } else {
-        console.log('User is not logged in.');
     }
 });
 
