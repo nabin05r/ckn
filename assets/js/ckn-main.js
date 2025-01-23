@@ -59,7 +59,7 @@ jQuery(window).on('load', function () {
         // Update the URL to the logout action with a redirect to the homepage
         $loginButton.attr(
             'href',
-            'http://cool-kids-network.local/wp-login.php?action=logout&redirect_to=http://cool-kids-network.local/'
+            ckn_ajax.logoutUrl
         );
     } else {
         console.log('User is not logged in.');

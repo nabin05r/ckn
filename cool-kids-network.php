@@ -84,6 +84,7 @@ if ( ! class_exists( 'Cool_Kids_Network' ) ) {
             wp_localize_script( 'ckn-main-js', 'ckn_ajax', [
                 'ajax_url' => admin_url( 'admin-ajax.php' ),
                 'nonce'    => wp_create_nonce( 'ckn_register_nonce' ),
+                'logoutUrl' => wp_logout_url(home_url()), // Dynamically generate logout URL'
             ] );
         }
 
