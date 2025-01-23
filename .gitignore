@@ -1,3 +1,6 @@
 # Ignore OSX files
 ._.DS_Store
 .DS_Store
+
+# Ignore node_modules
+node_modules/

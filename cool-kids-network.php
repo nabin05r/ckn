@@ -78,9 +78,9 @@ if ( ! class_exists( 'Cool_Kids_Network' ) ) {
          * Enqueue Scripts and Styles
          */
         public function ckn_styles(){
-            wp_enqueue_style( 'ckn-login-form', CKN_URL . 'assets/css/style.css', [], CKN_VERSION );
+            wp_enqueue_style( 'ckn-login-form', CKN_URL . 'dist/css/styles.min.css', [], CKN_VERSION );
             // wp_enqueue_script($handle, $src, $deps, $ver, $in_footer)
-            wp_enqueue_script( 'ckn-main-js', CKN_URL . '/assets/js/ckn-main.js', [ 'jquery' ], null, true );
+            wp_enqueue_script( 'ckn-main-js', CKN_URL . 'dist/js/main.min.js', [ 'jquery' ], null, true );
             wp_localize_script( 'ckn-main-js', 'ckn_ajax', [
                 'ajax_url' => admin_url( 'admin-ajax.php' ),
                 'nonce'    => wp_create_nonce( 'ckn_register_nonce' ),
