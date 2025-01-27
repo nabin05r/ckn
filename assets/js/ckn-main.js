@@ -27,10 +27,10 @@ jQuery(document).ready(function ($) {
                 $loader.hide();
 
                 if (response.success) {
-                    $message.html(`<p style="color:green;">${response.data.message}</p>`);
+                    $message.html(` < p style = "color:green;" > ${response.data.message} < / p > `);
                     $form.trigger('reset'); // Reset the form
                 } else {
-                    $message.html(`<p style="color:red;">${response.data.message}</p>`);
+                    $message.html(` < p style = "color:red;" > ${response.data.message} < / p > `);
                 }
             },
             error: function (xhr, status, error) {
@@ -45,12 +45,11 @@ jQuery(document).ready(function ($) {
     });
 });
 
-//Changing the Login button text to Logout when user is logged in 
+//Changing the Login button text to Logout when user is logged in
 jQuery(window).on('load', function () {
     const $loginButton = jQuery('.login-btn a'); // Target the link inside the login-btn class
 
     if (jQuery('body').hasClass('logged-in')) {
-
         // Update the button text to "Logout"
         $loginButton.text('Logout');
 

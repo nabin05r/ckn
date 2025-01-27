@@ -179,7 +179,7 @@
 
 /* Responsive Table */
 @media (max-width: 768px) {
-    .ckn-users-table th, 
+    .ckn-users-table th,
     .ckn-users-table td {
         font-size: 0.85rem;
         padding: 8px 10px;
@@ -249,7 +249,7 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .ckn-user-profile-table th, 
+    .ckn-user-profile-table th,
     .ckn-user-profile-table td {
         font-size: 0.9rem;
         padding: 10px;
