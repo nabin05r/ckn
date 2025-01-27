@@ -9,6 +9,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'js/[name].min.js',
+        clean: true, // Automatically clean the output directory
     },
     module: {
         rules: [

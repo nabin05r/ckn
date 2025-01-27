@@ -55,7 +55,7 @@ class CKN_Register_Form
     {
         check_ajax_referer('ckn_register_nonce', 'nonce');
 
-        $email = isset($_POST[ 'email' ]) ? sanitize_email($_POST[ 'email' ]) : '';
+        $email = isset($_POST[ 'ckn_email' ]) ? sanitize_email($_POST[ 'ckn_email' ]) : '';
 
         if (! is_email($email)) {
             wp_send_json_error([ 'message' => __('Invalid email address.', 'cool-kids-network') ]);

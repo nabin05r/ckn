@@ -19,7 +19,7 @@ jQuery(document).ready(function ($) {
             dataType: 'json',
             data: {
                 action: 'ckn_register_user', // Action defined in PHP
-                email: email,
+                ckn_email: email,
                 nonce: ckn_ajax.nonce, // Nonce from localized script
             },
             success: function (response) {
@@ -27,10 +27,10 @@ jQuery(document).ready(function ($) {
                 $loader.hide();
 
                 if (response.success) {
-                    $message.html(` < p style = "color:green;" > ${response.data.message} < / p > `);
+                    $message.html(`<p style = "color:green;" > ${response.data.message} </p>`);
                     $form.trigger('reset'); // Reset the form
                 } else {
-                    $message.html(` < p style = "color:red;" > ${response.data.message} < / p > `);
+                    $message.html(`<p style = "color:red;" > ${response.data.message} </p>`);
                 }
             },
             error: function (xhr, status, error) {
