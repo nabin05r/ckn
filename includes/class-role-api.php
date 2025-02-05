@@ -69,7 +69,7 @@ class CKN_Role_API
         }
 
         // Assign role to the user
-        $user_id = $user->ID;
+        // $user_id = $user->ID;
         $user->set_role($role);
 
         return [
